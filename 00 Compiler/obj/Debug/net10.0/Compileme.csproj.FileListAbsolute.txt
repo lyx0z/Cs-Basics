@@ -1,0 +1,15 @@
+C:\Dev\NikitaKucher\00 Compiler\bin\Debug\net10.0\Compileme.exe
+C:\Dev\NikitaKucher\00 Compiler\bin\Debug\net10.0\Compileme.deps.json
+C:\Dev\NikitaKucher\00 Compiler\bin\Debug\net10.0\Compileme.runtimeconfig.json
+C:\Dev\NikitaKucher\00 Compiler\bin\Debug\net10.0\Compileme.dll
+C:\Dev\NikitaKucher\00 Compiler\bin\Debug\net10.0\Compileme.pdb
+C:\Dev\NikitaKucher\00 Compiler\obj\Debug\net10.0\Compileme.GeneratedMSBuildEditorConfig.editorconfig
+C:\Dev\NikitaKucher\00 Compiler\obj\Debug\net10.0\Compileme.AssemblyInfoInputs.cache
+C:\Dev\NikitaKucher\00 Compiler\obj\Debug\net10.0\Compileme.AssemblyInfo.cs
+C:\Dev\NikitaKucher\00 Compiler\obj\Debug\net10.0\Compileme.csproj.CoreCompileInputs.cache
+C:\Dev\NikitaKucher\00 Compiler\obj\Debug\net10.0\Compileme.sourcelink.json
+C:\Dev\NikitaKucher\00 Compiler\obj\Debug\net10.0\Compileme.dll
+C:\Dev\NikitaKucher\00 Compiler\obj\Debug\net10.0\refint\Compileme.dll
+C:\Dev\NikitaKucher\00 Compiler\obj\Debug\net10.0\Compileme.pdb
+C:\Dev\NikitaKucher\00 Compiler\obj\Debug\net10.0\Compileme.genruntimeconfig.cache
+C:\Dev\NikitaKucher\00 Compiler\obj\Debug\net10.0\ref\Compileme.dll
