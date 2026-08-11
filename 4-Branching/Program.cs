@@ -5,6 +5,7 @@
         static void Main(string[] args)
         {
             //Schreibe ein Programm, dass zwei Zahlen als Input erwartet. Das Programm soll jeweils ausgeben, ob die beiden Zahlen gleich sind oder nicht. Benutze dafür die keywords if / else.
+            //Erweitere das Programm so, dass dies nun auch ausgeben soll, ob die beiden Inputs ein Vielfaches voneinander sind.
             Console.WriteLine("What is your first number?");
             var firstNumber = int.Parse(Console.ReadLine());
             Console.WriteLine("What is your second number?");
@@ -26,8 +27,8 @@
                 Console.WriteLine("Your numbers are not a multiple of each other"); 
             }
             
+            // Schreibe ein Programm, dass eine Zahl für eine Farbauswahl als Benutzereingabe entegennimmt. 1 = rot, 2= blau, 3 = grün, 4 = gelb. Bei allen anderne Eingaben soll eine Fehlermeldung 
             
-            //Erweitere das Programm so, dass dies nun auch ausgeben soll, ob die beiden Inputs ein Vielfaches voneinander sind.
             Console.WriteLine("wähle dein Zahl 1-4: ");
             int number;
             if (int.TryParse(Console.ReadLine(), out number))
