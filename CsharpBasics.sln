@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VariablesDataTypes", "VariablesDataTypes\VariablesDataTypes.csproj", "{77070913-C451-43D3-A697-0C01308307EA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-Operatoren", "03-Operatoren\03-Operatoren.csproj", "{946A3A66-192F-4F18-B65F-77AFBA5D0097}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{77070913-C451-43D3-A697-0C01308307EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{77070913-C451-43D3-A697-0C01308307EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{77070913-C451-43D3-A697-0C01308307EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{946A3A66-192F-4F18-B65F-77AFBA5D0097}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{946A3A66-192F-4F18-B65F-77AFBA5D0097}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{946A3A66-192F-4F18-B65F-77AFBA5D0097}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{946A3A66-192F-4F18-B65F-77AFBA5D0097}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
