@@ -26,7 +26,7 @@
             Console.WriteLine($"{RoundedE} {RoundedPi}");
 
             //Erkläre Typinferenz in deinen eigenen Worten. Schreibe ein Beispiel mit int und float
-            
+            // typinferenz ist wenn man in code benutzt var und nicht eine datatype von den variable, und das compiler wird selber den datatype von eine variable entscheiden. 
 
         }
     }
