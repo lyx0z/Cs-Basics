@@ -10,22 +10,30 @@
             var firstNumber = int.Parse(Console.ReadLine());
             Console.WriteLine("What is your second number?");
             var secondNumber = int.Parse(Console.ReadLine());
+
+            if ((firstNumber == 0)||(secondNumber == 00))
+            {
+                Console.WriteLine("Cant use 0");
+                return;
+            }
+            
             if(firstNumber == secondNumber)
             {
                 Console.WriteLine("Your numbers are a multiple of each other");
                 Console.WriteLine("Your numbers are equal");
             }
-            else if(firstNumber % secondNumber == 0)
+            else if(firstNumber % secondNumber == 0 || secondNumber % firstNumber == 0)
             {
-               Console.WriteLine("Your numbers are a multiple of each other"); 
-               Console.WriteLine("Your numbers are not equal"); 
+                Console.WriteLine("your numbers are not equals");
+                Console.WriteLine("Your numbers are a multiple of each other");
             }
-            
+
             else
             {
                 Console.WriteLine("Your numbers are not equal");
-                Console.WriteLine("Your numbers are not a multiple of each other"); 
+                Console.WriteLine("Your numbers are not a multiple of each other");
             }
+            
             
             // Schreibe ein Programm, dass eine Zahl für eine Farbauswahl als Benutzereingabe entegennimmt. 1 = rot, 2= blau, 3 = grün, 4 = gelb. Bei allen anderne Eingaben soll eine Fehlermeldung 
             
