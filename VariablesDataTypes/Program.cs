@@ -5,9 +5,10 @@
         static void Main(string[] args)
         {
             //Erstelle eine Variable mit deinem Namen und deinem Alter. Finde jeweils geeignete Namen.
-            string x = "Nikita ";
-            int y = 16;
-            Console.WriteLine(x + y);
+            string name = "Nikita ";
+            int age = 16;
+            string nameAndAge = name + age.ToString();
+            Console.WriteLine(nameAndAge);
 
             //Wieso funktioniert das erste Beispiel, das zweite aber nicht? (Siehe Code Snippet)
             // geht nicht weil eine int kann ein double sein, aber double kann nicht int sein weil int ist nur volle zahlen ohne komma
@@ -25,6 +26,8 @@
             Console.WriteLine($"{RoundedE} {RoundedPi}");
 
             //Erkläre Typinferenz in deinen eigenen Worten. Schreibe ein Beispiel mit int und float
+            
+
         }
     }
 }
