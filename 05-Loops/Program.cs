@@ -35,7 +35,8 @@ class Program
             //output 0, 1, 3, 4....
         }
         /*break wird das ganze loop aufhören und in main weiter code rennen lassen,
-         beim continue wird das bedingung (i == 2) übersprungen und wird weiter in loop machen bis der bedingung is erfüllt.*/
+         beim continue wird eine iteration stoppen wann die keyword continue vorkommt, 
+         und danach wird mit den nöchsten iteration in den loop weitermachen.*/
         
         //Schreibe ein Programm, dass eine Pyramide folgendermassen auf der Konsole ausgibt:
 
