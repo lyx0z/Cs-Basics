@@ -62,21 +62,33 @@ class Program
             Console.Write('\n');
         }
             
-        Console.ReadLine();
         
         /* Schreibe ein Quiz mit einem Thema deiner Wahl. Dabei sollen 4 Antworten existieren und nur eine davon richtig sein (Single Choice). So lange der Benutzer nicht die richtige Antwort gegeben hat,
         soll das Quiz wieder von vorne beginnnen. Wenn die richtige Antwort gegeben wird, soll das Program beendet werden. Benutze dafür einen while-loop.*/
 
         
+        var correctAnswer = "yellow";
+        Console.WriteLine("What colors are bananas?: ");
+        Console.WriteLine("red/orage/blue/yellow");
+        var userAnswer = Console.ReadLine();
+        while (userAnswer != correctAnswer)
+        {
+            Console.WriteLine("WRONG!");
+            Console.WriteLine("red/orage/blue/yellow");
+            userAnswer = Console.ReadLine();
+            
+        }
+        Console.WriteLine("CORRECT!");
         
-        
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
+
+
     }
 
 
