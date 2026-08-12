@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NameUndAlter", "NameUndAlter\NameUndAlter.csproj", "{16A2651D-2BE8-49B0-B0EC-28328474A3F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatentypenBeispiele", "DatentypenBeispiele\DatentypenBeispiele.csproj", "{F47A4DA9-DC87-48FB-B8DB-3D7B25BE4577}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PiAufgabe", "PiAufgabe\PiAufgabe.csproj", "{66F4B96A-CFB4-4F08-9AB2-3A8DADE9AEAA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{16A2651D-2BE8-49B0-B0EC-28328474A3F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16A2651D-2BE8-49B0-B0EC-28328474A3F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16A2651D-2BE8-49B0-B0EC-28328474A3F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16A2651D-2BE8-49B0-B0EC-28328474A3F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F47A4DA9-DC87-48FB-B8DB-3D7B25BE4577}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F47A4DA9-DC87-48FB-B8DB-3D7B25BE4577}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F47A4DA9-DC87-48FB-B8DB-3D7B25BE4577}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F47A4DA9-DC87-48FB-B8DB-3D7B25BE4577}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66F4B96A-CFB4-4F08-9AB2-3A8DADE9AEAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66F4B96A-CFB4-4F08-9AB2-3A8DADE9AEAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66F4B96A-CFB4-4F08-9AB2-3A8DADE9AEAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66F4B96A-CFB4-4F08-9AB2-3A8DADE9AEAA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
