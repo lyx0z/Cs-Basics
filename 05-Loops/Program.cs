@@ -40,8 +40,9 @@ class Program
         
         //Schreibe ein Programm, dass eine Pyramide folgendermassen auf der Konsole ausgibt:
 
-        Console.WriteLine("amout of layers");
-        int.Parse(Console.ReadLine(), out var totalLayers);
+        Console.WriteLine("amount of layers");
+        var totalLayers = int.Parse(Console.ReadLine());
+        //int.TryParse(Console.ReadLine(), out var totalLayers);
         for (var currentLayer = 1; currentLayer <= totalLayers; currentLayer++)
         {
             for (var spaceAmount = totalLayers - currentLayer; spaceAmount > 0; spaceAmount--)
