@@ -2,8 +2,12 @@
 
 public class BankAccount
 {
-    private int balance = 0;
+    public BankAccount(int startingBalance)
+    {
+        balance = startingBalance;
+    }
     
+    private int balance = 0;
     
     public void Deposit(int amount)
     {
