@@ -1,25 +1,25 @@
 ﻿using _06_OOP;
 
-BankAccount account = new BankAccount();
-
+BankAccount loggedInAccount = new BankAccount();
+var otherAccount = new BankAccount();
 bool running = true;
 
 while (running)
 {
-    Console.Clear();
     Console.WriteLine();
     Console.WriteLine("TerminalBANK");
     Console.WriteLine("1. Show balance");
     Console.WriteLine("2. Deposit");
     Console.WriteLine("3. Withdraw");
-    Console.WriteLine("4. Exit");
+    Console.WriteLine("4. Transfer");
+    Console.WriteLine("5. EXIT");
     Console.Write("Choose an option: ");
-
-    int choice = int.Parse(Console.ReadLine());
+    
+    var choice = int.Parse(Console.ReadLine());
 
     if (choice == 1)
     {
-        account.ShowBalance();
+        loggedInAccount.ShowBalance();
         Console.ReadKey();
     }
     else if (choice == 2)
@@ -27,7 +27,7 @@ while (running)
         Console.Write("How much do you want to deposit? ");
         int amount = int.Parse(Console.ReadLine());
 
-        account.Deposit(amount);
+        loggedInAccount.Deposit(amount);
 
         Console.WriteLine("Deposit successful!");
         Console.ReadKey();
@@ -38,7 +38,7 @@ while (running)
         Console.Write("How much do you want to withdraw? ");
         int amount = int.Parse(Console.ReadLine());
         
-        if (account.Withdraw(amount))
+        if (loggedInAccount.Withdraw(amount))
         {
             Console.WriteLine("Withdrawal successful!");
             Console.ReadKey();
@@ -46,6 +46,19 @@ while (running)
     }
 
     else if (choice == 4)
+    {
+        Console.Write("How much do you want to transfer to user @Chipmunk?: ");
+        int amount = int.Parse(Console.ReadLine());
+
+        if (loggedInAccount.Transfer(otherAccount, amount))
+        {
+            Console.WriteLine("Transfer successful!");
+        }
+
+        Console.ReadKey();
+        
+    }
+    else if (choice == 5)
     {
         running = false;
         Console.WriteLine("Goodbye!");
@@ -56,5 +69,6 @@ while (running)
         Console.WriteLine("Invalid option.");
         Console.ReadKey();
     }
+    Console.Clear();
     
 }

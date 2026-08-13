@@ -3,9 +3,25 @@
 public class BankAccount
 {
     private int balance = 0;
+    
+    
     public void Deposit(int amount)
     {
         balance = balance + amount;
+    }
+
+    public bool Transfer(BankAccount destination, int amount)
+    {
+        if (amount > balance)
+        {
+            Console.WriteLine("Not enough funds :(");
+            return false;
+        }
+
+        balance -= amount;
+        destination.Deposit(amount);
+
+        return true;
     }
     
     public void ShowBalance()
@@ -21,13 +37,14 @@ public class BankAccount
             Console.ReadKey();
             return false;
         }
-        
+
+
+
         else
         {
             balance = balance - amount;
             return true;
         }
-        
-    }
 
+    }
 }
