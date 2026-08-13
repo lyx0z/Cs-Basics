@@ -11,7 +11,7 @@ public class BankAccount
     
     public void Deposit(int amount)
     {
-        balance = balance + amount;
+        balance += amount;
     }
 
     public bool Transfer(BankAccount destination, int amount)
@@ -41,9 +41,7 @@ public class BankAccount
             Console.ReadKey();
             return false;
         }
-
-
-
+        
         else
         {
             balance = balance - amount;
@@ -51,4 +49,4 @@ public class BankAccount
         }
 
     }
-}
+}   
