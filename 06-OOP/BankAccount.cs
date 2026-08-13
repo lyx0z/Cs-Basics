@@ -42,11 +42,7 @@ public class BankAccount
             return false;
         }
         
-        else
-        {
-            balance = balance - amount;
-            return true;
-        }
-
+        balance =- amount;
+        return true;
     }
 }   
