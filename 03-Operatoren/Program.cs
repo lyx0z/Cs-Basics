@@ -6,7 +6,7 @@
         {
             //Schreibe ein Programm, dass zuerst eine Zahl mit sich selbst addiert und dann mit 5 multipliziert und speichere das Ergebnis in einer neuen Variable.
             Console.WriteLine("Enter your number: ");
-            var number = 0;
+            var number = 1;
             Int32.TryParse(Console.ReadLine(), out number);
             var number2 = (number + number) * 5;
             Console.WriteLine(number2);
