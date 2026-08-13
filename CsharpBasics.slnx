@@ -3,6 +3,8 @@
   <Folder Name="/07-Debugging/">
     <Project Path="07-Debugging-A1/07-Debugging-A1.csproj" />
     <Project Path="07-Debugging-A2/07-Debugging-A2.csproj" />
+    <Project Path="07-Debugging-A3/07-Debugging-A3.csproj" />
+    <Project Path="07-Debugging-A4/07-Debugging-A4.csproj" />
     <Project Path="07-Debugging/07-Debugging.csproj" />
   </Folder>
   <Project Path="03-Operatoren/03-Operatoren.csproj" />
