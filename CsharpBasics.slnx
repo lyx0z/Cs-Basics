@@ -1,4 +1,5 @@
 <Solution>
+  <Project Path="Extra-Fizzbuzz/Extra-Fizzbuzz.csproj" />
   <Project Path="VariablesDataTypes/VariablesDataTypes.csproj" />
   <Folder Name="/07-Debugging/">
     <Project Path="07-Debugging-A1/07-Debugging-A1.csproj" />
