@@ -1,4 +1,44 @@
-﻿namespace Extra_Fizzbuzz;
+﻿// namespace Extra_Fizzbuzz;
+//
+// class Program
+// {
+//     static void Main(string[] args)
+//     {
+//         Console.WriteLine("Whats your number?");
+//         int n = int.Parse(Console.ReadLine());
+//         int counter = 1;
+//
+//         while (counter <= n)
+//         {
+//             if (counter % 3 == 0 && counter % 5 == 0)
+//             {
+//                 Console.WriteLine("Fizzbuzz");
+//             }
+//             
+//             else if(counter % 3 == 0)
+//             {
+//               Console.WriteLine("Fizz");
+//             }
+//             
+//             else if(counter % 5 == 0)
+//             {
+//                 Console.WriteLine("Buzz");
+//             }
+//
+//             else
+//             {
+//                 Console.WriteLine(counter);
+//             }
+//
+//             counter++;
+//
+//         }
+//
+//     }
+// } 
+//
+
+namespace Extra_Fizzbuzz;
 
 class Program
 {
@@ -6,34 +46,38 @@ class Program
     {
         Console.WriteLine("Whats your number?");
         int n = int.Parse(Console.ReadLine());
-        int numberOfAttemps = 1;
-
-        while (numberOfAttemps <= n)
+        int counter = 1;
+        
+        
+        while (counter <= n)
         {
-            if (numberOfAttemps % 3 == 0 && numberOfAttemps % 5 == 0)
+
+            string smth = "";
+            
+            if (counter % 3 == 0 )
             {
-                Console.WriteLine("Fizzbuzz");
+                smth += "Fizz";
+            }
+
+            if (counter % 5 == 0)
+            {
+                smth += "Buzz";
             }
             
-            else if(numberOfAttemps % 3 == 0)
+            if (smth == "")
             {
-              Console.WriteLine("Fizz");
+                var numberAsText = counter.ToString();
+                smth += numberAsText;
             }
             
-            else if(numberOfAttemps % 5 == 0)
-            {
-                Console.WriteLine("Buzz");
-            }
 
-            else
-            {
-                Console.WriteLine(numberOfAttemps);
-            }
-
-            numberOfAttemps++;
-
+            Console.WriteLine(smth);
+            counter++;
+            
         }
-
+        
+        
     }
-}
+} 
+
 
