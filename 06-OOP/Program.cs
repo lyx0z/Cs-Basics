@@ -1,18 +1,28 @@
 ﻿using _06_OOP;
 
-class Program
+public class Program
 {
     static void Main(string[] args)
     {
+        Console.ForegroundColor = ConsoleColor.Green;  
+        
+
+
         var loggedInAccount = new BankAccount(246);
         var otherAccount1 = new BankAccount(319);
         var otherAccount2 = new BankAccount(765);
         bool running = true;
-
+        Console.WriteLine("Whats your name?");
+        var name = Console.ReadLine();
+        
+        
         while (running)
         {
+            Menu.NameAsk(name);
+            Coin.CoinDraw();
             Menu.MenuOptions();
-            var choice = int.Parse(Console.ReadLine());
+
+            int.TryParse(Console.ReadLine(), out var choice);
             switch (choice)
             {
                 case 1:
@@ -21,7 +31,7 @@ class Program
                     break;
                 case 2:
                     Console.Write("How much do you want to deposit? ");
-                    var amount = int.Parse(Console.ReadLine());
+                    int.TryParse(Console.ReadLine(), out var amount);
 
                     loggedInAccount.Deposit(amount);
 
