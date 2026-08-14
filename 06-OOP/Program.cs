@@ -11,93 +11,46 @@ class Program
 
         while (running)
         {
-            Console.WriteLine();
-            Console.WriteLine("TerminalBANK");
-            Console.WriteLine("1. Show balance");
-            Console.WriteLine("2. Deposit");
-            Console.WriteLine("3. Withdraw");
-            Console.WriteLine("4. Transfer");
-            Console.WriteLine("5. EXIT");
-            Console.Write("Choose an option: ");
-
             var choice = int.Parse(Console.ReadLine());
-
-            if (choice == 1)
+            switch (choice)
             {
-                loggedInAccount.ShowBalance();
-                Console.ReadKey();
-            }
-            else if (choice == 2)
-            {
-                Console.Write("How much do you want to deposit? ");
-                int amount = int.Parse(Console.ReadLine());
-
-                loggedInAccount.Deposit(amount);
-
-                Console.WriteLine("Deposit successful!");
-                Console.ReadKey();
-            }
-
-            else if (choice == 3)
-            {
-                Console.Write("How much do you want to withdraw? ");
-                var amount = int.Parse(Console.ReadLine());
-
-                if (loggedInAccount.Withdraw(amount))
-                {
-                    Console.WriteLine("Withdrawal successful!");
+                case 1:
+                    loggedInAccount.ShowBalance();
                     Console.ReadKey();
-                }
-            }
+                    break;
+                case 2:
+                    Console.Write("How much do you want to deposit? ");
+                    int amount = int.Parse(Console.ReadLine());
 
-            else if (choice == 4)
-            {
-                Console.WriteLine("Which user do you want to transfer money to?");
-                Console.WriteLine("1. Chipmunk 2. Yasha");
-                var moneyReceiver = int.Parse(Console.ReadLine());
+                    loggedInAccount.Deposit(amount);
 
-                Console.WriteLine("How much money would you like to transfer?");
-                var amount = int.Parse(Console.ReadLine());
+                    Console.WriteLine("Deposit successful!");
+                    Console.ReadKey();
+                    break;
+                case 3:
+                    Console.Write("How much do you want to withdraw? ");
+                    var amount = int.Parse(Console.ReadLine());
 
-                switch (moneyReceiver)
-                {
-                    case 1:
+                    if (loggedInAccount.Withdraw(amount))
                     {
-                        if (loggedInAccount.Transfer(otherAccount1, amount))
-                        {
-                            Console.WriteLine("Transfer successful!");
-                        }
-
+                        Console.WriteLine("Withdrawal successful!");
                         Console.ReadKey();
-                        break;
                     }
-                    case 2:
-                    {
-                        if (loggedInAccount.Transfer(otherAccount2, amount))
-                        {
-                            Console.WriteLine("Transfer successful!");
-                        }
+                    break;
+                case 4:
+                    Console.WriteLine("Which user do you want to transfer money to?");
+                    Console.WriteLine("1. Chipmunk 2. Yasha");
+                    var moneyReceiver = int.Parse(Console.ReadLine());
 
-                        Console.ReadKey();
-                        break;
-                    }
-                    default:
-                        Console.WriteLine("Invalid option");
-                        break;
-                }
+                    Console.WriteLine("How much money would you like to transfer?");
+                    var amount = int.Parse(Console.ReadLine());
+
+                    UserTransferChoice.ChooseUserToTransfer();
+                
                 
             }
-            else if (choice == 5)
-            {
-                running = false;
-                Console.WriteLine("Goodbye!");
-                Console.ReadKey();
-            }
-            else
-            {
-                Console.WriteLine("Invalid option.");
-                Console.ReadKey();
-            }
+            
+            
             Console.Clear();
         }
 
