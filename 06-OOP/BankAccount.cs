@@ -30,7 +30,7 @@ public class BankAccount
     
     public void ShowBalance()
     {
-        Console.WriteLine($"Your balance is: {balance}");
+        Console.WriteLine($"Your balance is: {balance:c}");
     }
 
     public bool Withdraw(int amount)
@@ -42,7 +42,7 @@ public class BankAccount
             return false;
         }
         
-        balance =- amount;
+        balance -= amount;
         return true;
     }
 }   
