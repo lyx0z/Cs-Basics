@@ -13,7 +13,6 @@ class Program
         {
             Menu.MenuOptions();
             var choice = int.Parse(Console.ReadLine());
-            
             switch (choice)
             {
                 case 1:

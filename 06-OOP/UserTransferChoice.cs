@@ -2,7 +2,6 @@
 
 public class UserTransferChoice
 {
-    
     public static void ChooseUserToTransfer(BankAccount loggedInAccount, BankAccount otherAccount1, BankAccount otherAccount2)
     {
         Console.WriteLine("Which user do you want to transfer money to?");
