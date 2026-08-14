@@ -45,14 +45,12 @@ class Program
     static void Main(string[] args)
     {
         Console.WriteLine("Whats your number?");
-        int n = int.Parse(Console.ReadLine());
-        int counter = 1;
-        
+        var n = int.Parse(Console.ReadLine());
+        var counter = 1;
         
         while (counter <= n)
         {
-
-            string smth = "";
+            var smth = "";
             
             if (counter % 3 == 0 )
             {
@@ -70,13 +68,10 @@ class Program
                 smth += numberAsText;
             }
             
-
             Console.WriteLine(smth);
             counter++;
             
         }
-        
-        
     }
 } 
 
