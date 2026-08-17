@@ -2,11 +2,14 @@
 
 public class BankAccount
 {
-    public BankAccount(int startingBalance)
+    public string Name;
+    public string Password;
+
+    public BankAccount(string loginData)
     {
-        balance = startingBalance;
+        LoginData = loginData;
     }
-    
+
     private int balance = 0;
     
     public void Deposit(int amount)
@@ -45,4 +48,5 @@ public class BankAccount
         balance -= amount;
         return true;
     }
+    public string LoginData { get; }
 }   

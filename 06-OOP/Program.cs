@@ -5,20 +5,14 @@ public class Program
     static void Main(string[] args)
     {
         Console.ForegroundColor = ConsoleColor.Green;  
-        
-
-
-        var loggedInAccount = new BankAccount(246);
-        var otherAccount1 = new BankAccount(319);
-        var otherAccount2 = new BankAccount(765);
         bool running = true;
-        Console.WriteLine("Whats your name?");
-        var name = Console.ReadLine();
         
-        
+        // Console.WriteLine("Whats your name?");
+        // var name = Console.ReadLine();
+        var loggedInAccount = AuthenticationService.GetActiveAccount();
         while (running)
         {
-            Menu.NameAsk(name);
+            // Menu.NameAsk(name);
             Coin.CoinDraw();
             Menu.MenuOptions();
 
@@ -48,9 +42,9 @@ public class Program
                         Console.ReadKey();
                     }
                     break;
-                case 4:
-                    UserTransferChoice.ChooseUserToTransfer(loggedInAccount, otherAccount1, otherAccount2);
-                    break;
+                // case 4:
+                //     UserTransferChoice.ChooseUserToTransfer(loggedInAccount, otherAccount1, otherAccount2);
+                //     break;
                 default:
                     Console.WriteLine("Invalid Option");
                     break;
