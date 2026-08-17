@@ -26,7 +26,8 @@ namespace Operatoren
                 Console.WriteLine(number);
             }
             //Schreibe eine eigene Sortiermethode (also nicht Sort() benutzen) für einen Ganzzahligen-Array.
-            int[] arrayToSort = [5, 4, 3, 2, 1, 7, 8, 6, 9];
+            //int[] arrayToSort = [5, 4, 3, 2, 1, 7, 8, 6, 9];
+            var arrayToSort = Enumerable.Range(0, 100).Select(_ => Random.Shared.Next(0, 100)).ToArray();
             var sorted = ArraySort(arrayToSort);
             foreach (var item in sorted)  
             {  
