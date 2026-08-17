@@ -8,7 +8,6 @@ namespace Operatoren
         {
             //Schreibe eine Methode, die alle Elemente in einem Array zusammenzählt und diese als Summe zurückgibt und rufe diese mit geeigneten Beispielen auf.
             ArrSum();
-            
             //Schreibe eine Methode, die einen beliebigen Array entgegennimmt und diesen in der umgekehrten Reihenfolge wieder zurückgibt.
             int[] nums = [1, 2, 3];
             var reversed = ReverseArray(nums);
@@ -18,12 +17,10 @@ namespace Operatoren
             {
                 Console.WriteLine(num);
             }
-            
-            
             //Schreibe eine Methode, die jedes Element eines Arrays mit Ganzzahlen mit sich selbst multipliziert und als Array in der gleichen Reihenfolge zurückgibt. Benutze dafür foreach.
             int[] numbers = [1, 2, 3, 4, 5];
             var multiplicated = ArrayMultiplication(numbers);
-
+            
             foreach (var number in multiplicated)
             {
                 Console.WriteLine(number);
@@ -35,7 +32,6 @@ namespace Operatoren
             {  
                 Console.WriteLine(item);  
             }  
-            
             //Schreibe eine Methode, mit der du einem Array von Ganzzahlen ein Element hinzufügen kannst.
             int[] array = [1, 2, 3, 4, 5];
             var newArray = ArrayAddIndex(array);
@@ -101,7 +97,6 @@ namespace Operatoren
                     }  
                 }  
             }
-
             return arr;
         }
         
@@ -114,6 +109,5 @@ namespace Operatoren
             newArray[arr.Length] = newIndex;
             return newArray;
         }
-        
     }
 }
