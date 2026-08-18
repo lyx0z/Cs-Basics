@@ -1,10 +1,8 @@
-﻿using System.Diagnostics.CodeAnalysis;
-
-namespace Operatoren
+﻿namespace _07_Arrays
 {
     class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             //Schreibe eine Methode, die alle Elemente in einem Array zusammenzählt und diese als Summe zurückgibt und rufe diese mit geeigneten Beispielen auf.
             ArrSum();
@@ -19,9 +17,9 @@ namespace Operatoren
             }
             //Schreibe eine Methode, die jedes Element eines Arrays mit Ganzzahlen mit sich selbst multipliziert und als Array in der gleichen Reihenfolge zurückgibt. Benutze dafür foreach.
             int[] numbers = [1, 2, 3, 4, 5];
-            var multiplicated = ArrayMultiplication(numbers);
+            var multiplied = ArrayMultiplication(numbers);
             
-            foreach (var number in multiplicated)
+            foreach (var number in multiplied)
             {
                 Console.WriteLine(number);
             }
@@ -41,22 +39,22 @@ namespace Operatoren
                 Console.WriteLine(item);
             }
         }
-        
-        public static void ArrSum()
+
+        private static void ArrSum()
         {
             int[] classAges = [16, 15, 21, 19];
             var sum = 0;
                 
-            for (int i = 0; i < classAges.Length; i++)
+            for (var i = 0; i < classAges.Length; i++)
             {
-                sum = sum + classAges[i];
+                sum = sum + i;
             }
 
             var ageAverage = sum / classAges.Length;
             Console.WriteLine(ageAverage);
         }
-        
-        public static int[] ReverseArray(int[] array)
+
+        private static int[] ReverseArray(int[] array)
         {
             var reversed = new int[array.Length]; 
             var reversedIndex = 0;
@@ -67,45 +65,46 @@ namespace Operatoren
             }
             return reversed;
         }
-        
-        public static int[] ArrayMultiplication(int[] arr)
+
+        private static int[] ArrayMultiplication(int[] arr)
         {
-            var multiplicated = new int[arr.Length];
+            var multiplied = new int[arr.Length];
             var index = 0; 
 
             foreach (var number in arr)
             {
-                multiplicated[index] = number * number;
+                multiplied[index] = number * number;
                 index++;
             }
 
-            return multiplicated;
+            return multiplied;
         }
-        
-        public static int[] ArraySort(int[] arr)
+
+        private static int[] ArraySort(int[] arr)
         {
-            var sorted = new int[arr.Length];
-            int temp = 0;
-            for (int i = 0; i <= arr.Length-1; i++)  
+            var sorted = (int[])arr.Clone();
+            var temp = 0;
+            for (var i = 0; i <= sorted.Length-1; i++)  
             {  
-                for (int j = i+1; j < arr.Length; j++)  
+                for (var j = i+1; j < sorted.Length; j++)  
                 {  
-                    if (arr[i] > arr[j])  
+                    if (sorted[i] > sorted[j])  
                     {  
-                        temp = arr[i];  
-                        arr[i] = arr[j];  
-                        arr[j] = temp;  
+                        temp = sorted[i];  
+                        sorted[i] = sorted[j];  
+                        sorted[j] = temp;
                     }  
                 }  
             }
-            return arr;
+
+            return sorted;
         }
-        
-        public static int[] ArrayAddIndex(int[] arr)
+
+        private static int[] ArrayAddIndex(int[] arr)
         {
             Console.WriteLine("what number do you want to add?");
-            int.TryParse(Console.ReadLine(), out var newIndex);
-            int[] newArray = new int[arr.Length + 1];
+            var newIndex = int.Parse(Console.ReadLine());
+            var newArray = new int[arr.Length + 1];
             arr.CopyTo(newArray, 0);
             newArray[arr.Length] = newIndex;
             return newArray;
