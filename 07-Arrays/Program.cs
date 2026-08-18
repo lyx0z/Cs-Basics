@@ -44,12 +44,11 @@
         {
             int[] classAges = [16, 15, 21, 19];
             var sum = 0;
-                
-            for (var i = 0; i < classAges.Length; i++)
-            {
-                sum = sum + i;
-            }
 
+            foreach (var i in classAges)
+            {
+                sum += i;
+            }
             var ageAverage = sum / classAges.Length;
             Console.WriteLine(ageAverage);
         }
