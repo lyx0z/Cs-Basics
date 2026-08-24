@@ -9,6 +9,7 @@
     <Project Path="07-Debugging/07-Debugging.csproj" />
   </Folder>
   <Project Path="03-Operatoren/03-Operatoren.csproj" />
+  <Project Path="07-Arrays/07-Arrays.csproj" />
   <Project Path="4-Branching/4-Branching.csproj" />
   <Project Path="05-Loops/05-Loops.csproj" />
   <Project Path="06-OOP/06-OOP.csproj" />
